@@ -1,0 +1,8 @@
+.custom{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: inset 19px 19px 37px #bfbfbf,
+            inset -19px -19px 37px #ffffff;
+}

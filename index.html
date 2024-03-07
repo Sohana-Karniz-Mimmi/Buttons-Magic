@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Magic</title>
+    <!-- DaisyUI CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <style>
+        .btnStyle{
+            background: #1DD100 !important;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="w-9/12 m-auto">
+        
+    </header>
+    <main class="w-9/12 m-auto">
+        <div class="flex justify-center min-h-screen">
+            <div class="w-9/12 m-auto py-6 ">
+                <div class="w-7/12 py-5 m-auto flex justify-between">
+                    <p class=" text-lg font-bold">Total Selected <span id="total-add" class=" text-xl p-5 h-8 w-8 hover:cursor-pointer hover:shadow-2xl rounded-full badge bg-black">0</span></p>
+                    <p class=" text-lg font-bold">Total Left <span id="total-left" class=" text-xl p-5 h-8 w-8 hover:cursor-pointer hover:shadow-2xl rounded-full badge bg-black">40</span></p>
+                </div>
+                <div class="w-7/12 m-auto">
+                    <div class="flex justify-between gap-8 pt-12">
+                        <button id="A1" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">A1</button>
+                        <button id="A2" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">A2</button>
+                        <button id="A3" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">A3</button>
+                        <button id="A4" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">A4</button>
+                        <button id="A5" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">A5</button>
+                    </div>
+                    <div class="flex justify-between gap-8 pt-12">
+                        <button id="B1" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">B1</button>
+                        <button id="B2" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">B2</button>
+                        <button id="B3" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">B3</button>
+                        <button id="B4" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">B4</button>
+                        <button id="B5" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">B5</button>
+                    </div>
+                    <div class="flex justify-between gap-8 pt-12">
+                        <button id="C1" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">C1</button>
+                        <button id="C2" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">C2</button>
+                        <button id="C3" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">C3</button>
+                        <button id="C4" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">C4</button>
+                        <button id="C5" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">C5</button>
+                    </div>
+                    <div class="flex justify-between gap-8 pt-12">
+                        <button id="D1" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">D1</button>
+                        <button id="D2" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">D2</button>
+                        <button id="D3" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">D3</button>
+                        <button id="D4" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">D4</button>
+                        <button id="D5" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">D5</button>
+                    </div>
+                    <div class="flex justify-between gap-8 pt-12">
+                        <button id="E1" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">E1</button>
+                        <button id="E2" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">E2</button>
+                        <button id="E3" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">E3</button>
+                        <button id="E4" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">E4</button>
+                        <button id="E5" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">E5</button>
+                    </div>
+                    <div class="flex justify-between gap-8 pt-12">
+                        <button id="F1" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">F1</button>
+                        <button id="F2" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">F2</button>
+                        <button id="F3" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">F3</button>
+                        <button id="F4" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">F4</button>
+                        <button id="F5" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">F5</button>
+                    </div>
+                    <div class="flex justify-between gap-8 pt-12">
+                        <button id="G1" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">G1</button>
+                        <button id="G2" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">G2</button>
+                        <button id="G3" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">G3</button>
+                        <button id="G4" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">G4</button>
+                        <button id="G5" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">G5</button>
+                    </div>
+                    <div class="flex justify-between gap-8 pt-12">
+                        <button id="H1" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">H1</button>
+                        <button id="H2" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">H2</button>
+                        <button id="H3" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">H3</button>
+                        <button id="H4" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">H4</button>
+                        <button id="H5" class="seat-btn add-btn px-8 py-2 text-white text-lg font-bold rounded-xl bg-green-600">H5</button>
+                    </div>
+                </div>
+                
+                    
+            </div>
+            
+        </div>
+        
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
